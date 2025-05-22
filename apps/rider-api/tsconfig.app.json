@@ -1,0 +1,33 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "sourceMap": true,
+    "types": [
+      "node"
+    ],
+    "emitDecoratorMetadata": true,
+    "target": "es2021"
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "jest.config.ts"
+  ],
+  "include": [
+    "**/*.ts",
+    "../../libs/database/src/lib/crypto/crypto.service.ts",
+    "../driver-api/src/app/park-spot/dto/provider-notification.dto.ts",
+    "../parking-customer-api/src/app/core/dtos/park-spot.dto.ts",
+    "../parking-customer-api/src/app/core/dtos/park-order.dto.ts",
+    "../parking-customer-api/src/app/core/dtos/park-review.dto.ts",
+    "../parking-customer-api/src/app/core/dtos/park-review-parameter.dto.ts",
+    "../parking-customer-api/src/app/order/park-order-query.service.ts",
+    "../parking-customer-api/src/app/park-spot/park-spot.resolver.ts",
+    "../parking-customer-api/src/app/park-spot/park-spot.service.ts",
+    "../parking-customer-api/src/app/notification/dtos/customer-notification.dto.ts",
+    "../parking-customer-api/src/app/order/inputs/create-park-order.input.ts",
+    "../parking-customer-api/src/app/order-feedback/inputs/park-review.input.ts",
+    "../parking-customer-api/src/app/park-spot/inputs/park-spot-filter.input.ts"
+  ]
+}

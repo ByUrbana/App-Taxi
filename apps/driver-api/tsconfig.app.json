@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+    "emitDecoratorMetadata": true,
+    "target": "es2021"
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "jest.config.ts"
+  ],
+  "include": [
+    "**/*.ts",
+    "../parking-provider-api/src/app/order/dtos/park-order.dto.ts",
+    "../parking-provider-api/src/app/park-spot/dtos/park-spot.dto.ts",
+    "../parking-provider-api/src/app/park-spot/inputs/create-park-spot.input.ts",
+    "../parking-provider-api/src/app/core/dtos/provider-notification.dto.ts"
+  ]
+}

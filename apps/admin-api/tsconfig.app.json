@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+    "emitDecoratorMetadata": true,
+    "target": "es2021"
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "jest.config.ts"
+  ],
+  "include": [
+    "**/*.ts",
+    "../../libs/database/src/lib/interfaces/license-verify-remote-response.ts",
+    "../../libs/database/src/lib/interfaces/config.dto.ts",
+    "../../libs/database/src/lib/interfaces/app-config-info.dto.ts",
+    "../../libs/database/src/lib/interfaces/config-information.dto.ts",
+    "../../libs/database/src/lib/interfaces/license.dto.ts",
+    "../../libs/database/src/lib/entities/enums/chart-interval.enum.ts"
+  ]
+}

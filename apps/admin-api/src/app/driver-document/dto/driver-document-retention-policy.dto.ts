@@ -1,0 +1,11 @@
+import { Field, ID, Int, ObjectType } from '@nestjs/graphql';
+import { IDField } from '@ptc-org/nestjs-query-graphql';
+
+@ObjectType('DriverDocumentRetentionPolicy')
+export class DriverDocumentRetentionPolicyDTO {
+  @IDField(() => ID)
+  id: number;
+  title: string;
+  @Field(() => Int)
+  deleteAfterDays: number;
+}

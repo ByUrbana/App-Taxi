@@ -1,0 +1,71 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom",
+      "esnext.asynciterable"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@urbana/admin-panel/*": [
+        "apps/admin-panel/*"
+      ],
+      "@urbana/coupon": [
+        "libs/database/src/lib/coupon/index.ts"
+      ],
+      "@urbana/crypto": [
+        "libs/database/src/lib/crypto/index.ts"
+      ],
+      "@urbana/customer": [
+        "libs/database/src/lib/customer/index.ts"
+      ],
+      "@urbana/customer-wallet": [
+        "libs/database/src/lib/customer-wallet/index.ts"
+      ],
+      "@urbana/database": [
+        "libs/database/src/index.ts"
+      ],
+      "@urbana/database/*": [
+        "libs/database/src/lib/entities/*"
+      ],
+      "@urbana/geo/*": [
+        "libs/database/src/lib/geo/*"
+      ],
+      "@urbana/order/*": [
+        "libs/database/src/lib/order/*",
+        "libs/database/src/lib/order/region/*",
+        "libs/database/src/lib/order/google-services/*"
+      ],
+      "@urbana/payment": [
+        "libs/database/src/lib/payment/index.ts"
+      ],
+      "@urbana/redis/*": [
+        "libs/database/src/lib/redis/*"
+      ],
+      "@urbana/shop": [
+        "libs/database/src/lib/shop/index.ts"
+      ],
+      "@urbana/sms/*": [
+        "libs/database/src/lib/sms/*"
+      ],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
